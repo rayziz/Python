@@ -145,3 +145,33 @@ for i in range(5, 25, 3): # i тут типа счётчика в итериру
 
 # 5) Так мы задаём словарь 
 # number = {}
+
+# 6) Создание словаря
+
+a, b, c = 1, 2, 3
+# a: 1 b: 2 c: 3
+print('a: {} b: {} c: {}'.format(a, b, c))
+
+7) О строках
+
+text = 'съешь ещё этих мягких французских булок'
+print(len(text)) # 39
+print('ещё' in text) # True
+print(text.isdigit()) # False
+print(text.islower()) # True
+print(text.replace('ещё','ЕЩЁ')) #
+for c in text:
+print(c)
+
+print(text[0]) # c
+print(text[1]) # ъ
+print(text[len(text)-1]) # к
+print(text[-5]) # б
+print(text[:]) # print(text)
+print(text[:2]) # съ
+print(text[len(text)-2:]) # ок
+print(text[2:9]) # ешь ещё
+print(text[6:-18]) # ещё этих мягких
+print(text[0:len(text):6]) # сеикакл
+print(text[::6]) # сеикакл
+text = text[2:9] + text[-5] + text[:2] # ...
